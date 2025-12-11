@@ -18,6 +18,7 @@ from .apigee_llm import ApigeeLlm
 from .base_llm import BaseLlm
 from .gemma_llm import Gemma
 from .google_llm import Gemini
+from .lite_llm import LiteLlm
 from .llm_request import LlmRequest
 from .llm_response import LlmResponse
 from .registry import LLMRegistry
@@ -27,9 +28,11 @@ __all__ = [
     'Gemini',
     'Gemma',
     'LLMRegistry',
+    'LiteLlm',
 ]
 
 
 LLMRegistry.register(Gemini)
 LLMRegistry.register(Gemma)
 LLMRegistry.register(ApigeeLlm)
+LLMRegistry.register(LiteLlm)

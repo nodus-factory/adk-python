@@ -1297,4 +1297,15 @@ class LiteLlm(BaseLlm):
       A list of supported models.
     """
 
-    return []
+    return [
+        r"openai/.*",
+        r"anthropic/.*",
+        r"azure/.*",
+        r"mistral/.*",
+        r"ollama/.*",
+        r"vertex_ai/.*",
+        r"groq/.*",
+        r"gemini/.*",
+        r"deepseek/.*",
+        r"cohere/.*"
+    ]
